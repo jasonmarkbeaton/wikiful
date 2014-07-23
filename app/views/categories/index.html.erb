@@ -1,0 +1,9 @@
+<h1>Some Categories</h1>
+<h3>Click on one of the categories below to get more info.</h3>
+<ul>
+	<% @categories.each do |category| %>
+		<h4>
+	  	<%= link_to category.name, category %>
+	  </h4>
+	<% end %>
+</ul>
